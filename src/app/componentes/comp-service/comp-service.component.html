@@ -1,0 +1,24 @@
+<div class="content">
+    <h2>Implementação Services</h2>
+
+    <button (click)="acessandoListaProdutos()">ObterProdutos</button>
+    <br />
+
+    <!-- criar a tabela para exibir os dados -->
+    <table class="bordaTabela">
+        <thead>
+            <tr>
+                <th>Identificação do Produto</th>
+                <th>Nome do Produto</th>
+                <th> Preço do Produto</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let x of cestaProdutos;">
+                <td>{{ x.idProduto }}</td>
+                <td>{{ x.nomeProduto }}</td>
+                <td>{{ x.precoProduto }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

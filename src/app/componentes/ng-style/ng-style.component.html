@@ -1,0 +1,23 @@
+<div class="content">
+    <h2>Implementação ngStyle</h2>
+
+    <!-- primeira parte -->
+    <br /> <br />
+    <input type="text" [(ngModel)]="cores" />
+    <div [ngStyle]="{'color':cores}">
+        Mude a cor do texto
+    </div>
+
+    <!-- segunda parte -->
+    <br />
+    <input type="number" [(ngModel)]="tamanho" />
+    <div [ngStyle]="{'font-size.px':tamanho}">
+        Mude o tamanho do texto!
+    </div>
+
+    <!-- terceira parte -->
+    <br />
+    <div [ngStyle] = "objStyle">
+        Mude a cor e o tamanho da fonte do texto - via propriedade descrita no arquivo .ts
+    </div>
+</div>
